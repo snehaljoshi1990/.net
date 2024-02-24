@@ -1,0 +1,89 @@
+using System;
+
+namespace BasicCarGame
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to the Basic Car Game!");
+
+            // Initialize game objects
+            Car playerCar = new Car();
+            Obstacle obstacle = new Obstacle();
+
+            // Main game loop
+            while (true)
+            {
+                // Handle user input
+                if (Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo key = Console.ReadKey(true);
+                    if (key.Key == ConsoleKey.LeftArrow)
+                    {
+                        playerCar.TurnLeft();
+                    }
+                    else if (key.Key == ConsoleKey.RightArrow)
+                    {
+                        playerCar.TurnRight();
+                    }
+                    else if (key.Key == ConsoleKey.UpArrow)
+                    {
+                        playerCar.Accelerate();
+                    }
+                    else if (key.Key == ConsoleKey.DownArrow)
+                    {
+                        playerCar.Decelerate();
+                    }
+                }
+
+                // Update game state
+                playerCar.Move();
+                obstacle.Move();
+
+                // Collision detection
+                if (CollisionDetector.CheckCollision(playerCar, obstacle))
+                {
+                    Console.WriteLine("Game Over!");
+                    break;
+                }
+
+                // Render game
+                Console.Clear();
+                playerCar.Render();
+                obstacle.Render();
+
+                // Delay to control frame rate
+                System.Threading.Thread.Sleep(100);
+            }
+        }
+    }
+
+    class Car
+    {
+        public void Move()
+        {
+            // Implement car movement logic
+        }
+
+        public void Accelerate()
+        {
+            // Implement car acceleration logic
+        }
+
+        public void Decelerate()
+        {
+            // Implement car deceleration logic
+        }
+
+        public void TurnLeft()
+        {
+            // Implement car turning left logic
+        }
+
+        public void TurnRight()
+        {
+            // Implement car turning right logic
+        }
+
+        public void Render(
