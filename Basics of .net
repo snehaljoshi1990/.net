@@ -108,3 +108,7 @@ Familiarize yourself with the core libraries for tasks like file I/O, networking
 
 Understand the .NET Framework or .NET Core/.NET 5/6 depending on the version available. These frameworks provide libraries and tools for building various types of applications.
 Familiarize yourself with the core libraries for tasks like file I/O, networking, and database access.
+
+Download and install Visual Studio, the integrated development environment (IDE) for .NET development. Visual Studio Community Edition is free and provides all the necessary tools.
+Learn the Framework:
+
