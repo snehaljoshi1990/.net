@@ -111,4 +111,16 @@ Familiarize yourself with the core libraries for tasks like file I/O, networking
 
 Download and install Visual Studio, the integrated development environment (IDE) for .NET development. Visual Studio Community Edition is free and provides all the necessary tools.
 Learn the Framework:
+namespace BasicCarGame
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to the Basic Car Game!");
+
+            // Initialize game objects
+            Car playerCar = new Car();
+            Obstacle obstacle = new Obstacle();
+
 
