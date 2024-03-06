@@ -123,4 +123,6 @@ namespace BasicCarGame
             Car playerCar = new Car();
             Obstacle obstacle = new Obstacle();
 
-
+Download and install Visual Studio, the integrated development environment (IDE) for .NET development. Visual Studio Community Edition is free and provides all the necessary tools.
+Learn the Framework:
+namespace BasicCarGame
