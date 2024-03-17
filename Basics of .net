@@ -18,6 +18,7 @@ namespace BasicCarGame
             while (true)
             {
                 // Handle user input
+ // Handle user input
                 if (Console.KeyAvailable)
                 {
                     ConsoleKeyInfo key = Console.ReadKey(true);
