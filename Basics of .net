@@ -11,6 +11,9 @@ namespace BasicCarGame
             // Initialize game objects
             Car playerCar = new Car();
             Obstacle obstacle = new Obstacle();
+// Initialize game objects
+            Car playerCar = new Car();
+            Obstacle obstacle = new Obstacle();
 
             // Main game loop
             while (true)
